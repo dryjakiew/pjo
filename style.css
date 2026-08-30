@@ -1,27 +1,100 @@
+/* =========================================
+   Catppuccin Mocha Theme (Simple & Pretty)
+   ========================================= */
+
+:root {
+    /* Catppuccin Mocha Palette */
+    --base: #1e1e2e;       /* Main background */
+    --surface0: #313244;   /* Card/Container background */
+    --surface1: #45475a;   /* Hover states */
+    --text: #cdd6f4;       /* Main text */
+    --subtext0: #a6adc8;   /* Muted text / subtitles */
+    --mauve: #cba6f7;      /* Headers */
+    --blue: #89b4fa;       /* Links */
+    --sapphire: #74c7ec;   /* Hover links */
+    --overlay0: #6c7086;   /* Borders / dividers */
+    --pink: #f5c2e7;       /* Accents */
+}
+
 /* Base Styles */
 body {
     font-family: system-ui, -apple-system, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 20px;
-    
-    background-image: url('https://files.catbox.moe/t12845.jpg');
-    background-repeat: repeat;
-    background-attachment: fixed; 
-
+    background-color: var(--base);
     color: var(--text);
+    display: flex;
+    justify-content: center;
 }
 
+/* Main Content Container */
 .container {
-    box-sizing: border-box; 
     width: 100%;
     max-width: 500px;
-    margin: 40px auto; 
-    
-    background-color: rgba(49, 50, 68, 0.92); 
-    backdrop-filter: blur(4px);
-    
+    margin: 40px auto;
+    background-color: var(--surface0);
     padding: 40px;
-    border-radius: 16px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); 
+    border-radius: 16px; /* Slightly softer, rounder corners */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Typography & Headers */
+h1, h2, h3 {
+    color: var(--mauve);
+    text-align: center;
+    font-weight: 700;
+}
+
+header {
+    border-bottom: 2px dashed var(--overlay0);
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.subtitle {
+    color: var(--subtext0);
+    font-size: 1.1em;
+    margin-top: -10px;
+}
+
+/* Sections & Lists */
+.section {
+    margin-bottom: 30px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+li strong {
+    color: var(--pink); /* Give bold text inside lists a nice pop of pastel pink */
+}
+
+/* Links */
+a {
+    color: var(--blue);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: var(--sapphire);
+    text-decoration: underline;
+    text-decoration-style: wavy; /* Adds a fun, pretty hover effect */
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: var(--subtext0);
+    border-top: 2px dashed var(--overlay0);
+    padding-top: 20px;
+    text-align: center;
 }
