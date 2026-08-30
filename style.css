@@ -1,41 +1,28 @@
+/* Base Styles */
 body {
-            font-family: Times New Roman;
-            line-height: 1.6;
-            margin: 0 auto;
-            max-width: 700px;
-            padding: 40px 20px;
-            color: #333;
-            background-color: #fcfcfc;
-        }
-        h1, h2 {
-            color: #111;
-        }
-        header {
-            border-bottom: 2px solid #eaeaea;
-            padding-bottom: 10px;
-            margin-bottom: 30px;
-        }
-        .subtitle {
-            color: #666;
-            font-size: 1.1em;
-            margin-top: -10px;
-        }
-        .section {
-            margin-bottom: 30px;
-        }
-        a {
-            color: #0066cc;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        footer {
-            margin-top: 50px;
-            font-size: 0.9em;
-            color: #888;
-            border-top: 1px solid #eaeaea;
-            padding-top: 20px;
-            text-align: center;
-        
+    font-family: system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    /* Usunięte display: flex; oraz justify-content: center; */
+    padding: 20px;
+    
+    background-image: url('https://files.catbox.moe/t12845.jpg');
+    background-repeat: repeat;
+    background-attachment: fixed; 
+
+    color: var(--text);
+}
+
+.container {
+    box-sizing: border-box; /* To jest kluczowe! Dzięki temu padding nie rozpycha kontenera poza ekran */
+    width: 100%;
+    max-width: 500px;
+    margin: 40px auto; /* Margin auto odpowiada za idealne wyśrodkowanie okienka */
+    
+    background-color: rgba(49, 50, 68, 0.92); 
+    backdrop-filter: blur(4px);
+    
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); 
 }
