@@ -1,18 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,700&display=swap');
+
 :root {
-    --bg-base: #f0f4eb;       /* Jasny, beżowo-zielony kolor tła */
-    --surface: #ffffff;       /* Tło kontenera dla maksymalnej czytelności */
-    --text-main: #1a3c28;     /* Głęboki, ciemny zielony dla głównego tekstu */
-    --text-muted: #4a6a56;    /* Zgaszony zielony dla podtytułów */
-    --accent: #2d6a4f;        /* Żywszy zielony dla nagłówków i linków */
-    --accent-hover: #1b4332;  /* Ciemniejszy zielony po najechaniu na link */
-    --divider: #d8e2dc;       /* Delikatny zielonkawy kolor linii oddzielających */
+    --bg-base: #f0f4eb;       
+    --surface: #ffffff;       
+    --text-main: #1a3c28;     
+    --text-muted: #4a6a56;    
+    --accent: #2d6a4f;        
+    --accent-hover: #1b4332;  
+    --divider: #d8e2dc;       
 }
 
 body {
-    font-family: system-ui, -apple-system, sans-serif;
+    /* Zmiana czcionki na IBM Plex Mono */
+    font-family: 'IBM Plex Mono', monospace;
     line-height: 1.6;
     margin: 0;
-    padding: 20px; /* Zapewnia bezpieczny odstęp od krawędzi ekranu */
+    padding: 20px; 
     background-color: var(--bg-base);
     color: var(--text-main);
 }
@@ -20,18 +23,18 @@ body {
 .container {
     box-sizing: border-box;
     width: 100%;
-    max-width: 900px; /* Pozwala stronie rosnąć, ale zapobiega zbyt długim, nieczytelnym linijkom tekstu na dużych monitorach */
-    margin: 0; /* Brak "auto" wymusza trzymanie się lewej strony ekranu */
+    max-width: 900px; 
+    margin: 0; 
     
     background-color: var(--surface);
     padding: 40px;
     border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(26, 60, 40, 0.08); /* Subtelny, zielonkawy cień */
+    box-shadow: 0 4px 20px rgba(26, 60, 40, 0.08); 
 }
 
 h1, h2, h3 {
     color: var(--accent);
-    text-align: left; /* Konsekwentne wyrównanie do lewej */
+    text-align: left; 
     margin-top: 0;
 }
 
