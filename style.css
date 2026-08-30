@@ -3,7 +3,6 @@ body {
     font-family: system-ui, -apple-system, sans-serif;
     line-height: 1.6;
     margin: 0;
-    /* Usunięte display: flex; oraz justify-content: center; */
     padding: 20px;
     
     background-image: url('https://files.catbox.moe/t12845.jpg');
@@ -14,10 +13,10 @@ body {
 }
 
 .container {
-    box-sizing: border-box; /* To jest kluczowe! Dzięki temu padding nie rozpycha kontenera poza ekran */
+    box-sizing: border-box; 
     width: 100%;
     max-width: 500px;
-    margin: 40px auto; /* Margin auto odpowiada za idealne wyśrodkowanie okienka */
+    margin: 40px auto; 
     
     background-color: rgba(49, 50, 68, 0.92); 
     backdrop-filter: blur(4px);
