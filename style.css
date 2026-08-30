@@ -1,65 +1,53 @@
-/* =========================================
-   Catppuccin Mocha Theme (Simple & Pretty)
-   ========================================= */
-
 :root {
-    /* Catppuccin Mocha Palette */
-    --base: #1e1e2e;       /* Main background */
-    --surface0: #313244;   /* Card/Container background */
-    --surface1: #45475a;   /* Hover states */
-    --text: #cdd6f4;       /* Main text */
-    --subtext0: #a6adc8;   /* Muted text / subtitles */
-    --mauve: #cba6f7;      /* Headers */
-    --blue: #89b4fa;       /* Links */
-    --sapphire: #74c7ec;   /* Hover links */
-    --overlay0: #6c7086;   /* Borders / dividers */
-    --pink: #f5c2e7;       /* Accents */
+    --bg-base: #f0f4eb;       /* Jasny, beżowo-zielony kolor tła */
+    --surface: #ffffff;       /* Tło kontenera dla maksymalnej czytelności */
+    --text-main: #1a3c28;     /* Głęboki, ciemny zielony dla głównego tekstu */
+    --text-muted: #4a6a56;    /* Zgaszony zielony dla podtytułów */
+    --accent: #2d6a4f;        /* Żywszy zielony dla nagłówków i linków */
+    --accent-hover: #1b4332;  /* Ciemniejszy zielony po najechaniu na link */
+    --divider: #d8e2dc;       /* Delikatny zielonkawy kolor linii oddzielających */
 }
 
-/* Base Styles */
 body {
     font-family: system-ui, -apple-system, sans-serif;
     line-height: 1.6;
     margin: 0;
-    padding: 20px;
-    background-color: var(--base);
-    color: var(--text);
-    display: flex;
-    justify-content: center;
+    padding: 20px; /* Zapewnia bezpieczny odstęp od krawędzi ekranu */
+    background-color: var(--bg-base);
+    color: var(--text-main);
 }
 
-/* Main Content Container */
 .container {
+    box-sizing: border-box;
     width: 100%;
-    max-width: 500px;
-    margin: 40px auto;
-    background-color: var(--surface0);
+    max-width: 900px; /* Pozwala stronie rosnąć, ale zapobiega zbyt długim, nieczytelnym linijkom tekstu na dużych monitorach */
+    margin: 0; /* Brak "auto" wymusza trzymanie się lewej strony ekranu */
+    
+    background-color: var(--surface);
     padding: 40px;
-    border-radius: 16px; /* Slightly softer, rounder corners */
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(26, 60, 40, 0.08); /* Subtelny, zielonkawy cień */
 }
 
-/* Typography & Headers */
 h1, h2, h3 {
-    color: var(--mauve);
-    text-align: center;
-    font-weight: 700;
+    color: var(--accent);
+    text-align: left; /* Konsekwentne wyrównanie do lewej */
+    margin-top: 0;
 }
 
 header {
-    border-bottom: 2px dashed var(--overlay0);
+    border-bottom: 2px solid var(--divider);
     padding-bottom: 15px;
     margin-bottom: 30px;
-    text-align: center;
+    text-align: left;
 }
 
 .subtitle {
-    color: var(--subtext0);
+    color: var(--text-muted);
     font-size: 1.1em;
     margin-top: -10px;
 }
 
-/* Sections & Lists */
 .section {
     margin-bottom: 30px;
 }
@@ -72,29 +60,23 @@ li {
     margin-bottom: 8px;
 }
 
-li strong {
-    color: var(--pink); /* Give bold text inside lists a nice pop of pastel pink */
-}
-
-/* Links */
 a {
-    color: var(--blue);
+    color: var(--accent);
     text-decoration: none;
+    font-weight: 500;
     transition: color 0.2s ease;
 }
 
 a:hover {
-    color: var(--sapphire);
+    color: var(--accent-hover);
     text-decoration: underline;
-    text-decoration-style: wavy; /* Adds a fun, pretty hover effect */
 }
 
-/* Footer */
 footer {
     margin-top: 40px;
     font-size: 0.9em;
-    color: var(--subtext0);
-    border-top: 2px dashed var(--overlay0);
+    color: var(--text-muted);
+    border-top: 2px solid var(--divider);
     padding-top: 20px;
-    text-align: center;
+    text-align: left;
 }
