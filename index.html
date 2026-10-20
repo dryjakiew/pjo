@@ -28,12 +28,17 @@
 .hover-container:hover .hover-image {
   display: block;
 }
-.blink {
-      animation: blinker 1s step-start infinite;
+
+        
+.fade-blink {
+      animation: smoothBlink 1.5s ease-in-out infinite alternate;
     }
 
-    @keyframes blinker {
-      50% {
+    @keyframes smoothBlink {
+      from {
+        opacity: 1;
+      }
+      to {
         opacity: 0;
       }
     }
@@ -68,7 +73,7 @@
       </ul>
     </nav>
         
-<p><p class="blink"><b><i></i>DAYS WITHOUT PIERDOLENIE GLUPOT: 0</b></p>
+<p><p class="fade-blink"><b><i></i>DAYS WITHOUT PIERDOLENIE GLUPOT: 0</b></p>
   </main>
 
   <hr>
