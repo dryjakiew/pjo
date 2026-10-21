@@ -5,17 +5,28 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>hello</title>
   <style>
- @import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Condensed:ital,wght@0,400..700;1,400..700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
     body {
  max-width: 400px;
       margin: 10vh auto;
       padding: 0;
       text-align: center;
-      font-family: "Libre Caslon Condensed", serif;
+      font-family: "Instrument Serif", serif;
       font-weight: 400;
       font-style: normal;
 }
-        
+    
+    ul {
+  padding: 0;
+  list-style: none;
+  > li {
+    display: grid;
+    grid-template-columns: 10rem 1fr;
+    @media (max-width: 50rem) {
+      grid-template-columns: 9rem 1fr;
+    }
+  }
+}
 .hover-container {
   position: relative;
   display: inline-block;
@@ -36,7 +47,7 @@
 
         
 .fade-blink {
-      animation: smoothBlink 1s ease-in-out infinite alternate;
+      animation: smoothBlink 0.5s ease-in-out infinite alternate;
     }
 
     @keyframes smoothBlink {
@@ -53,33 +64,50 @@
 
   <header>
     <h1><i>pjo</i></h1>
-    <p>₊˚⊹⋆˙౨ৎ˚⟡˖ ࣪. ݁₊ ⊹ . ݁ ⟡ ݁ . ⊹ ₊ ݁.*ੈ✩‧₊˚</p>
   </header>
 
   <hr>
 <img src="/porter-robinson-get-your-wish.gif" width="200">
+<p><small>₊˚⊹⋆˙౨ৎ˚⟡˖ ࣪. ݁₊ ⊹ . ݁ ⟡ ݁ . ⊹ ₊ ݁.*ੈ✩‧₊˚</small>
     <main>
     <p>
     <h2>siemaneczko</h2>
-    i am <b>piotr / pjo /</b> 熙驰，born in 2004, based in lublin/warsaw, poland. average dude™ normalny chłop™. 
+    i am <b><u>piotr / pjo /</u></b> 熙驰, born in 2004, based in lublin/warsaw, poland. average dude™ normalny chłop™. 
       majoring in sinology, i speak pl/en/zh (my chinese is conversational at best though). extraverted, if you take 
       anything i put on the internet
-      at face value you should probably reconsider it
+        at face value you should probably reconsider it. 
       
 <p>i like <b>public transport, eurovision song contest,</b> polish rap, <a href="#" class="hover-container">
   gsp's<img src="https://files.catbox.moe/zm8gch.gif" alt="Preview Image" class="hover-image"/></a>, beer, pop music, my nokia n8
 
-    <nav>
-      <ul>
-        <li><a href="https://x.com/pjo5G">twitter</a></li>
-          <li><a href="https://x.com/wszechswiatek77">twitter (locked)</a></li>
-        <li><a href="https://www.instagram.com/dryjakiew/">instagram</a></li>
-        <li><a href="https://www.instagram.com/dzisiaj88888888/">instagram (nokia n8)</a></li>
-      </ul>
-    </nav>
-        
+<ul>
+  <li>
+    <span>twitter</span>
+    <span>
+      <a target="_blank" rel="me" href="https://x.com/pjo5G">@pjo5g</a>
+    </span>
+  </li>
+  <li>
+    <span>priv twitter</span>
+    <span>
+      <a target="_blank" rel="me" href="https://x.com/wszechswiatek77">@wszechswiatek77</a>
+    </span>
+  </li>
+  <li>
+    <span>instagram</span>
+    <span>
+      <a target="_blank" rel="me" href="https://www.instagram.com/dryjakiew/">@dryjakiew</a>
+    </span>
+  </li>
+  <li>
+    <span>instagram (2)</span>
+    <span>
+      <a target="_blank" rel="me" href="https://www.instagram.com/dzisiaj88888888/">@dzisiaj88888888</a>
+    </span>
+  </li>
 <p><p class="fade-blink"><b><i></i>DAYS WITHOUT PIERDOLENIE GLUPOT: 0</b></p>
-  <a href="https://pjo.pruszkow.pl/"><img src="https://raw.githubusercontent.com/dryjakiew/pjo/refs/heads/main/button-88x31%20(1).gif" alt="pjo5g"></a>
+
+<a href="https://pjo.pruszkow.pl/"><img src="https://raw.githubusercontent.com/dryjakiew/pjo/refs/heads/main/button-88x31%20(1).gif" alt="pjo5g"></a>
   <a href="https://ferret.cat/"><img src="https://ferret.cat/assets/button.png" alt="ferret.cat"></a>
   <a href="https://rib.moe/"><img src="https://rib.moe/ribdotmoe.gif" alt="rib.moe"></a>
   <a href="https://cbt.re/"><img src="https://cbt.re/res/88x31/nikuw.gif" alt="cbt.re"></a>
